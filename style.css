@@ -38,13 +38,33 @@ button, #sidebar {
     grid-row: 1 / 6;
     padding: 4px;
     font-size: 24px;
+    padding-left: var(--left-pading);
 }
 
-.first-links {
+.sidebar-top, .first-links, .second-links {
     display: grid;
     grid-template-columns: 48px 5fr;
     align-items: center;
-    margin-left: var(--left-pading);
+    row-gap: 8px;
+    padding: 8px;
+}
+
+.sidebar-top {
+    grid-template-columns: 64px 5fr;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.first-links, .second-links {
+    margin-top: 32px;
+}
+
+.logo {
+    max-width: 48px;
+}
+
+.logo + p {
+    font-size: 32px;
 }
 
 .icon {
